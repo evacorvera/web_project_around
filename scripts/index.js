@@ -9,14 +9,14 @@ const profileName = document.querySelector(".main__paragraph_name");
 const profileAbout = document.querySelector(".main__paragraph_about");
 
 openBtn.addEventListener("click", () => {
-  popup.classList.remove("popup__hidden");
+  popup.classList.remove("popup_hidden");
 
 inputName.value = profileName.textContent;
 inputAbout.value = profileAbout.textContent;
 });
 
 closeBtn.addEventListener("click", () => {
-  popup.classList.add("popup__hidden");
+  popup.classList.add("popup_hidden");
 });
 
 form.addEventListener("submit", (e) => {
@@ -24,5 +24,5 @@ form.addEventListener("submit", (e) => {
   profileName.textContent = inputName.value;
   profileAbout.textContent = inputAbout.value;
 
-  popup.classList.add("popup__hidden");
+  popup.classList.add("popup_hidden");
 });
