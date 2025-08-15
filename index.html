@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeria Triple Ten">
+    <meta name="author" content="Eva Corvera">
+    <meta name="keywords" content="html, css, javascript">
+    <title>Around the US</title>
+    <link rel="stylesheet" href="/pages/index.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <img src="/images/Vector.svg" alt="header logo" class="header__image">
+        </header>
+        <main class="main">
+            <div class="main__profile">
+                <div class="main__profile-image">
+                  <img src="images/DSC_3492.JPEG" alt="main profile picture" class="main__profile-picture">
+                </div>
+                <div class="main__content-paragraph">
+                  <p class="main__paragraph main__paragraph_name">Eva Corvera</p>
+                  <p class="main__paragraph main__paragraph_about">Estudiante</p>
+                  <button type="button" class="main__button main__button_edit">&#x1F58C;</button>
+                </div>
+                <button type="button" class="main__button main__button_add">&#x1F7A3;</button>
+            </div>
+            <div class="popup popup__hidden">
+              <button type="button" class="popup__button popup__button_close">&#x1F7A9</button>
+              <form action class="popup__container">
+                <h2 class="popup__subtitle">Editar perfil</h2>
+                <fieldset class="popup__content">
+                  <input type="text" class="popup__input popup__input_name" placeholder="Nombre">
+                  <input type="text" class="popup__input popup__input_about" placeholder="Acerca de mi">
+                </fieldset>
+                <fieldset class="popup__content">
+                  <button type="submit" class="popup__button popup__button_save">Guardar</button>
+                </fieldset>
+              </form>
+            </div>
+            <div class="gallery">
+              <div class="gallery__card">
+                <img src="/images/indianCreek.jpg" alt="photo Indian Creek" class="gallery__image">
+                <div class="gallery__content">
+                  <p class="gallery__paragraph">Indian Creek</p>
+                  <button  type="button" class="gallery__button gallery__button-like">
+                    <img src="/images/heart.svg" alt="like" class="gallery__button-like">
+                  </button>
+                </div>
+              </div>
+              <div class="gallery__card">
+                <img src="/images/moab.jpg" alt="Moab" class="gallery__image">
+                <div class="gallery__content">
+                  <p class="gallery__paragraph">Moab</p>
+                  <button type="button" class="gallery__button gallery__button-like">
+                    <img src="/images/heart.svg" alt="like" class="gallery__button-like">
+                  </button>
+                </div>
+              </div>
+              <div class="gallery__card">
+                <img src="/images/redRocks.jpg" alt="Red Rocks" class="gallery__image">
+                <div class="gallery__content">
+                  <p class="gallery__paragraph">Red Rocks</p>
+                  <button type="button" class="gallery__button gallery__button-like">
+                    <img src="/images/heart.svg" alt="like" class="gallery__button-like">
+                  </button>
+                </div>
+              </div>
+              <div class="gallery__card">
+                <img src="/images/riverGorge.jpg" alt="New River Gorge" class="gallery__image">
+                <div class="gallery__content">
+                  <p class="gallery__paragraph">New River Gorge</p>
+                  <button type="button" class="gallery__button gallery__button-like">
+                    <img src="/images/heart.svg" alt="like" class="gallery__button-like">
+                  </button>
+                </div>
+              </div>
+              <div class="gallery__card">
+                <img src="/images/shawangunks.jpg" alt="Shawangunk" class="gallery__image">
+                <div class="gallery__content">
+                  <p class="gallery__paragraph">Shawangunk</p>
+                  <button type="button" class="gallery__button gallery__button-like">
+                    <img src="/images/heart.svg" alt="like" class="gallery__button-like">
+                  </button>
+                </div>
+              </div>
+              <div class="gallery__card">
+                <img src="/images/Yosemite.jpeg" alt="Yosemite" class="gallery__image">
+                <div class="gallery__content">
+                  <p class="gallery__paragraph">Yosemite</p>
+                  <button type="button" class="gallery__button gallery__button-like">
+                    <img src="/images/heart.svg" alt="like" class="gallery__button-like">
+                  </button>
+                </div>
+              </div>
+            </div>
+        </main>
+        <footer class="footer">
+          <p class="footer__copyright">© 2024 Around The U.S.</p>
+        </footer>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
