@@ -1,5 +1,5 @@
 .popup {
-  display: fixed;
+  display: none;
   width: 880px;
   height: 100%;
   top: 50%;
@@ -12,8 +12,8 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.popup__hidden {
-  display: none;
+.popup_opened {
+  display: flex;
 }
 
 .popup__button_close {
