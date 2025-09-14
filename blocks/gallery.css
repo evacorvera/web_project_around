@@ -30,6 +30,7 @@
   background-color: #fff;
   color: #000;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 320px) and (max-width: 584px) {
@@ -45,6 +46,7 @@
 .gallery__image {
   width: 100%;
   height: 282px;
+  object-fit: cover;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -66,15 +68,48 @@
 }
 
 .gallery__button {
-  border: 2px inset;
-  background-color: #fff;
-  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
   padding: 0;
   cursor: pointer;
+  z-index: 1;
 }
 
 .gallery__button-like {
-  height: 35px;
+  font-size: 2rem;
   align-self: flex-end;
+  cursor: pointer;
+  color: #fff;
+  -webkit-text-stroke: 2px #000;
   border: none;
+  background: none;
+  transition: all 0.3s ease;
+}
+
+.gallery__button-like.active  {
+  color: #f00;
+}
+
+.gallery__button-delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery__icon-trash {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
